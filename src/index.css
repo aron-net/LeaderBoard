@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leader {
+  flex: 1;
+}
+
+.leader-item {
+  display: flex;
+  border: 1px solid;
+}
+
+p {
+  margin-left: 10px;
+}
+
+.refresh {
+  width: 75px;
+  height: 30px;
+}
+
+.add {
+  flex: 1;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.add-btn {
+  width: 75px;
+  height: 30px;
+  margin-left: auto;
+}
+
+.gray {
+  background-color: rgb(187, 187, 187);
+}
