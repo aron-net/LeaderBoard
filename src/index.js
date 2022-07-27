@@ -1,48 +1,17 @@
 import './index.css';
-import addScore from './addScore.js';
+import loadScores from './refresh-scores.js';
+import submitScore from './submitScore.js';
 
-const newPromise = new Promise((Resolve, Reject) => {
-  const scores = [
-    {
-      name: 'aron',
-      score: '69',
-    },
-    {
-      name: 'milu',
-      score: '80',
-    },
-    {
-      name: 'abraham',
-      score: '60',
-    },
-    {
-      name: 'Jone',
-      score: '80',
-    },
-    {
-      name: 'lemlem',
-      score: '69',
-    },
-    {
-      name: 'Gebru',
-      score: '80',
-    },
-  ];
+loadScores();
 
-  if (scores.length > 0) {
-    Resolve(scores);
-  } else {
-    Reject(new Error('no Data'));
-  }
+const refresh = document.querySelector('.refresh');
+refresh.addEventListener('click', () => {
+  loadScores();
 });
 
-newPromise.then(
-  (value) => {
-    value.forEach((score, id) => {
-      addScore(score.name, score.score, id);
-    });
-  },
-  (error) => {
-    throw error;
-  },
-);
+const submit = document.querySelector('.submit');
+submit.addEventListener('click', () => {
+  const user = document.querySelector('#user').value;
+  const score = document.querySelector('#score').value;
+  submitScore(user, score);
+});

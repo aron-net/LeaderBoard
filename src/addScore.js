@@ -12,5 +12,4 @@ const addScore = (name, score, id) => {
     `;
   ScoresContainer.appendChild(scoreHTML);
 };
-
 export default addScore;
