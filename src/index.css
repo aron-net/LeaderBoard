@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .wrapper {
   display: flex;
   width: 100%;
@@ -19,7 +20,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .title {
@@ -73,5 +73,3 @@ p {
 .gray {
   background-color: rgb(187, 187, 187);
 }
-
-
