@@ -1,7 +1,19 @@
+body {
+  background-image: url('../image/images.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .wrapper {
   display: flex;
   width: 100%;
   gap: 15px;
+}
+
+h1 {
+  font-size: 40px;
+  color: antiquewhite;
+  padding: 5px 20px;
 }
 
 .head {
@@ -10,13 +22,25 @@
   align-items: center;
 }
 
+.title {
+  font-size: 30px;
+  color: wheat;
+  padding: 2px 20px;
+}
+
 .leader {
   flex: 1;
 }
 
+.leaders-container {
+  border: 30px solid white;
+  border-image: url('../image/border.png') stretch 20;
+  background-color: antiquewhite;
+}
+
 .leader-item {
   display: flex;
-  border: 1px solid;
+  border: 5px solid rgb(186, 196, 186);
 }
 
 p {
@@ -26,6 +50,8 @@ p {
 .refresh {
   width: 75px;
   height: 30px;
+  border-radius: 30%;
+  box-shadow: 5px 5px black;
 }
 
 .add {
