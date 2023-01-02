@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link]()
+[Live Demo Link](https://aron-helu.github.io/LeaderBoard/dist/index.html)
 
 
 ## Getting Started
